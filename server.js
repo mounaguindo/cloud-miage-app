@@ -10,7 +10,8 @@ app.get('/', (req, res) => {
       <table border='1' cellpadding='8'> 
         <tr><td><b>Hostname</b></td><td>${process.env.HOSTNAME || 
 'local'}</td></tr> 
-        <tr><td><b>Port</b></td><td>${PORT}</td></tr> 
+        <tr><td><b>Port</b></td><td>${PORT}</td></tr>
+        <tr><td><b>Env</b></td><td>${process.env.APP_ENV || 'development'}</td></tr>  
         <tr><td><b>Node version</b></td><td>${process.version}</td></tr> 
         <tr><td><b>Platform</b></td><td>${process.platform}</td></tr> 
         <tr><td><b>Nom</b></td><td>Maïmouna Guindo - M1 MIAGE</td></tr>
